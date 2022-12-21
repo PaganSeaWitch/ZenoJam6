@@ -6,15 +6,20 @@
 script = ExtResource("1_kpeeu")
 
 [node name="LeftString" type="Line2D" parent="."]
+unique_name_in_owner = true
 points = PackedVector2Array(-200, -100, 0, 0)
 
 [node name="RightString" type="Line2D" parent="."]
+unique_name_in_owner = true
 points = PackedVector2Array(200, -100, 0, 0)
 
 [node name="LeftEnd" type="Marker2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(-200, -100)
 
 [node name="RightEnd" type="Marker2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(200, -100)
 
 [node name="Centre" type="Marker2D" parent="."]
+unique_name_in_owner = true

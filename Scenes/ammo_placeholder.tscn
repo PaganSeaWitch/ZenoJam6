@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b100qbi08uqpa"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tvuhy"]
+
+[sub_resource type="Gradient" id="Gradient_8p0oe"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_6gmgl"]
+gradient = SubResource("Gradient_8p0oe")
+
+[node name="ammo_placeholder" type="RigidBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_tvuhy")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = SubResource("GradientTexture2D_6gmgl")
