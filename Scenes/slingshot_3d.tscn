@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5mwwi2qvdtek"]
+
+[ext_resource type="Script" path="res://Scripts/slingshot_3d.gd" id="1_n0d4m"]
+
+[node name="slingshot_3d" type="Node3D"]
+script = ExtResource("1_n0d4m")
+
+[node name="Left" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0)
+gizmo_extents = 1.89
+
+[node name="Right" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+gizmo_extents = 4.77
+
+[node name="Centre" type="Marker3D" parent="."]
+gizmo_extents = 3.06

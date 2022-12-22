@@ -8,6 +8,7 @@
 gradient = SubResource("Gradient_8p0oe")
 
 [node name="ammo_placeholder" type="RigidBody3D"]
+freeze = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_tvuhy")
