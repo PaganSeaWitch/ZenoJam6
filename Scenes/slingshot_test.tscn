@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://di21t5ywipcqg"]
+[gd_scene load_steps=3 format=3 uid="uid://o7l5i0ov6uoi"]
 
 [ext_resource type="PackedScene" uid="uid://b100qbi08uqpa" path="res://Scenes/ammo_placeholder.tscn" id="1_0yo5y"]
 [ext_resource type="PackedScene" uid="uid://c5mwwi2qvdtek" path="res://Scenes/slingshot_3d.tscn" id="2_xbgxa"]

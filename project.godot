@@ -11,6 +11,6 @@ config_version=5
 [application]
 
 config/name="Zeno Jam 6"
-run/main_scene="res://Scenes/slingshot_testing.tscn"
+run/main_scene="res://Scenes/main.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://Resources/icon.svg"
