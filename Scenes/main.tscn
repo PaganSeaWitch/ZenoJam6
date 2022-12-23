@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://ivkv84ow56ly"]
+[gd_scene load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://Scripts/main.gd" id="1_wn2qd"]
+[ext_resource type="Script" path="res://Scripts/slingshot_test.gd" id="1_wn2qd"]
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_wn2qd")
