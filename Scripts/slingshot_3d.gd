@@ -34,7 +34,13 @@ func fire():
 	# Applies a impulse with X and Y equal to the oposite of the distance to the centre
 	# and Z (forward) equal to the total stretch of the string
 	current_ammo.freeze = false
-	current_ammo.apply_central_impulse(Vector3(%Centre.position.x - ammo_position.x, %Centre.position.y - ammo_position.y, -Vector2(%Centre.position.x - ammo_position.x, %Centre.position.y - ammo_position.y).length()))
+	current_ammo.apply_central_impulse(Vector3(
+		%Centre.position.x - ammo_position.x,
+		2 * (%Centre.position.y - ammo_position.y),
+		-Vector2(%Centre.position.x - ammo_position.x,
+			%Centre.position.y - ammo_position.y).length()
+		)
+	)
 	
 	# Cleans up to get ready for the next reload
 	armed = false
@@ -58,7 +64,7 @@ func _input(event):
 		
 		
 		# Moved the ammo to the mouse, but not outside or above the corners or the catapult and not more than 400px below the centre
-		var input_position = px_to_percent(event.position) * 20
+		var input_position = px_to_percent(event.position) * 40
 		input_position = Vector2(input_position.x, -input_position.y)
 		ammo_position = input_position.clamp(Vector2(%Left.position.x, %Centre.position.y - 15), Vector2 (%Right.position.x, %Right.position.y))
 		move_ammo()

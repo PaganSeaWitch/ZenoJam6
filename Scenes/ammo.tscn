@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cej58m1esoysn"]
+
+[ext_resource type="Script" path="res://Scripts/ammo.gd" id="1_k6epu"]
+[ext_resource type="Texture2D" uid="uid://dcot4hyqt08pi" path="res://Resources/scared_person.png" id="2_5rvxv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oh8ym"]
+
+[node name="ammo" type="RigidBody3D"]
+sleeping = true
+script = ExtResource("1_k6epu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_oh8ym")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+billboard = 2
+texture = ExtResource("2_5rvxv")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
